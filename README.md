@@ -71,3 +71,18 @@ pip install -r requirements.txt
 
 jupyter notebook notebooks/01_exploracao_inicial.ipynb
 ```
+
+### Métricas do Modelo Naive
+
+O modelo foi avaliado utilizando as métricas **MAE** (Erro Médio Absoluto) e **RMSE** (Raiz do Erro Quadrático Médio).
+
+| Métrica | Resultado |
+|---|---:|
+| MAE | `6.48 trocas` |
+| RMSE | `79.36 trocas` |
+
+**MAE:** representa, em média, quantas trocas o modelo erra em relação ao valor real.
+
+**RMSE:** mede o erro dando maior peso para erros maiores.
+
+
