@@ -72,17 +72,15 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_exploracao_inicial.ipynb
 ```
 
-### Métricas do Modelo Naive
+## Desempenho Geral dos Baselines
 
-O modelo foi avaliado utilizando as métricas **MAE** (Erro Médio Absoluto) e **RMSE** (Raiz do Erro Quadrático Médio).
+Foram avaliados dois modelos baseline: **Naive** e **Média Móvel de 7 Dias**, utilizando as métricas MAE, RMSE e MAPE.
 
-| Métrica | Resultado |
-|---|---:|
-| MAE | `6.48 trocas` |
-| RMSE | `79.36 trocas` |
+| Baseline | MAE | RMSE | MAPE |
+|---|---:|---:|---:|
+| Naive | **6.67** | 9.11 | 4.497.175.091.525.490,50% |
+| Média Móvel 7 Dias | 7.38 | **8.21** | 8.627.233.849.048.878,00% |
 
-**MAE:** representa, em média, quantas trocas o modelo erra em relação ao valor real.
+### Resultado
 
-**RMSE:** mede o erro dando maior peso para erros maiores.
-
-
+O **Baseline Naive** apresentou o menor **MAE (6.67)**, enquanto a **Média Móvel de 7 Dias** apresentou o menor **RMSE (8.21)**.
