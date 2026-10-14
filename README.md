@@ -71,3 +71,16 @@ pip install -r requirements.txt
 
 jupyter notebook notebooks/01_exploracao_inicial.ipynb
 ```
+
+## Desempenho Geral dos Baselines
+
+Foram avaliados dois modelos baseline: **Naive** e **Média Móvel de 7 Dias**, utilizando as métricas MAE, RMSE e MAPE.
+
+| Baseline | MAE | RMSE | MAPE |
+|---|---:|---:|---:|
+| Naive | **6.67** | 9.11 | 4.497.175.091.525.490,50% |
+| Média Móvel 7 Dias | 7.38 | **8.21** | 8.627.233.849.048.878,00% |
+
+### Resultado
+
+O **Baseline Naive** apresentou o menor **MAE (6.67)**, enquanto a **Média Móvel de 7 Dias** apresentou o menor **RMSE (8.21)**.
